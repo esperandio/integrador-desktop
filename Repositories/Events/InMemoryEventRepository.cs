@@ -21,5 +21,10 @@ namespace MonitoramentoTempoOcioso.Repositories.Events
         {
             return _events.Count;
         }
+
+        public List<IEvent> GetEventsToSync()
+        {
+            return _events;
+        }
     }
 }
